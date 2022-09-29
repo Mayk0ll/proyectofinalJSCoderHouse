@@ -1,0 +1,143 @@
+:root{
+    --primario: #9c27b0;
+    --primarioOscuro: #89119d;
+    --secundario: #ffce00;
+    --secundarioOscuro: rgb(233,287,2);
+    --blanco: #fff;
+    --negro: #000;
+
+    --fuentePpaal: 'Staatliches', cursive;
+
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+body{
+    font-size: 1rem;
+    background-color: var(--primario);
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--secundario) ;
+    font-family: var(--fuentePpaal) ;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+
+.contenedor{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.contenedorProductos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.producto{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: all 0.5s;
+}
+.producto:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.producto__img{
+    border-radius: 2rem;
+
+}
+.producto__nombre{
+    font-size: 4rem;
+}
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto__nombre,.producto__precio{
+    font-family: var(--fuentePpaal);
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1.2rem;
+}
+.producto__informacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+}
+.factura{
+    background-color: var(--primarioOscuro);
+    border-radius: 1rem;
+    margin: 3rem 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.ListaProductos{
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    list-style: none;
+    padding: 0 2rem;
+}
+.ListaProductos li{
+    font-size: 2rem;
+}
+.botonPagar{
+    height: 3rem;
+    border-radius: 1rem;
+}
+.delete{
+    background-color:red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2rem;
+    width: 50px;
+    height: 2rem;
+    justify-self: end;
+}
+.delete:hover{
+    background-color: rgb(146, 1, 1);
+}
+.contenedorDetalleFactura{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+
+}
+.botonCarrito{
+    /* border-radius: 50rem; */
+}
+.botonCarrito:hover{
+    transform: scale(1.3);
+}

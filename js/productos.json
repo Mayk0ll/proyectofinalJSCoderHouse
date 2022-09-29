@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "VueJS",
+        "price": 30,
+        "url": "./imagenes/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Angular",
+        "price": 20,
+        "url": "./imagenes/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "React",
+        "price": 50,
+        "url": "./imagenes/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Redux",
+        "price": 30,
+        "url": "./imagenes/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Node",
+        "price": 40,
+        "url": "./imagenes/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Sass",
+        "price": 40,
+        "url": "./imagenes/6.jpg"
+    }
+]
